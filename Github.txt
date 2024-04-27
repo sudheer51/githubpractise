@@ -4,9 +4,7 @@ Github:
 	WebBased Application
 	Cloud Environments : dev,qa,stage/pre-prod,prod
 				devevlopment  : 5 stories -> dev ->qa -> pre-prod -> prod ->Release 2.0 (Release 1.0 + new feaTURES)
-				support : 5 bugs  		->   dev -> qa-> pre-prod->prod (Release 1.0)
-				
-	
+				support : 5 bugs        ->   dev -> qa-> pre-prod->prod (Release 1.0)
 	Branching Strategy: develop,master,release,hotfix
 	Pull Request -> Compare two branches and difference of the commit id's 
 	Push,Pull from the local github

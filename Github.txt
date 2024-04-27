@@ -20,7 +20,6 @@ Branches :
 						+ 3 commits 
 
 Signup : create an account
-
 Steps to push your code from Eclipse into Github  for the firt time:
 -----------------------------------------------------------
  https://total-qa.com/devops-tutorial-1-pushing-code-local-global-repository-github/
@@ -54,10 +53,6 @@ Comparison of your branch against master:
 =======================================
 UpArrow -> means commits ahead of master 
 DownArrow-> mean you are behind master 
-
-
-
- 
 ------------------------
 master -> 5 commits 
 tc_123 -> 3 commits 

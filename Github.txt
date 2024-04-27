@@ -1,0 +1,178 @@
+Github:
+	Source Code REpository
+	Versioning: Commit ID
+	WebBased Application
+	Cloud Environments : dev,qa,stage/pre-prod,prod
+				devevlopment  : 5 stories -> dev ->qa -> pre-prod -> prod ->Release 2.0 (Release 1.0 + new feaTURES)
+				support : 5 bugs  		->   dev -> qa-> pre-prod->prod (Release 1.0)
+				
+	
+	Branching Strategy: develop,master,release,hotfix
+	Pull Request -> Compare two branches and difference of the commit id's 
+	Push,Pull from the local github
+	Collaboration tool
+
+Branches :
+
+	master - 2 commits 
+			>> develop
+			>> fix-1234 2commits
+				one file Login.java 1 commit 
+				
+						+ 3 commits 
+
+Signup : create an account
+
+Steps to push your code from Eclipse into Github  for the firt time:
+-----------------------------------------------------------
+ https://total-qa.com/devops-tutorial-1-pushing-code-local-global-repository-github/
+---------------------------------------------------------------------------------
+Scenario 1: Pushing the code into the Github for the first time.
+1. Create a local Git repository.	-> Right click on the project -> Team -> Sharepoject
+2. Create a repository in the Github->https://github.com/sudheer51/mmpprime.git
+3. Right click on the project -> Teams -> Commit ->
+			Git Staging view -> Add all the files which are required and stage them ->
+							    commit & Push -> git repository , username , password,master -> finish 
+4. Access the repsitory link for the code pushed via Eclispe
+-----------------------------------------------------------------------------------
+ 
+Scenario 2: import the code into the eclipse ->Create a branch from master -> Perform changes ->commit & Push to Github->
+			create Pull request[compare the differences between two branches] ->Review->Merge into master 
+			
+Scenario 3: Refresh the modify_edit_profile with latest master branch changes
+			switch to master 
+				>> team -> pull 
+			switch to modify_edit_profile
+				-> merge master 
+
+
+Scenario 4: Resolving Conflicts 
+			Conflicts:
+				Resolve the conflicts-Modify the file with required changes 
+				Add to index
+				commit and push
+----------------------------------------------------------------------------------
+Comparison of your branch against master:
+=======================================
+UpArrow -> means commits ahead of master 
+DownArrow-> mean you are behind master 
+
+
+
+ 
+------------------------
+master -> 5 commits 
+tc_123 -> 3 commits 
+downarrow -> tc_123 is behind master 
+right click -> team =>merge -> master 
+tc_123 -> 5 commits + 1 merge commit 
+------------------------------------
+gitbash commands :
+
+git init -> to convert java project / maven into a git repository 
+git status -> to view the tracked /untracked files 
+git add filename.java -> to track them 
+git commit -m "Message " -> to commit the files 
+git push origin 
+git log -> to view all the commit information 
+git pull -> to fetch the latest changes in to the branch [Refresh the branch ]
+
+
+Next Day 
+
+Refresh the master branch -> pulling the latest changes 
+========
+	git init
+    dir
+    cd GitbashDemo/
+    clear
+    git status
+    cd src/
+    git status
+    git add LoginTests.java
+    git status
+    git commit -m "added LoginTests.java"
+    git remote add origin https://github.com/sudheer51/GitBashDemo.git
+    git push -u origin
+    git push --set-upstream origin master
+    git checkout branch_name
+    git checkout -b new_branch
+	git branch // to view the number of branches available 
+    vi LoginTests.java -> press i key in the keyboard for insert and do the changes and press escape key and type :wq
+    git status
+    git add LoginTests.java
+    git commit -m "removed the spaces"
+    git push origin
+    git push --set-upstream origin new_branch
+-----------------------------
+Scenario 3: Refresh the branch via master 
+
+ git checkout master
+  546  git pull
+  547  git checkout fixing_issues
+  548  git merge master
+  549  clear
+  550  git status
+---------------------------------------------
+Scenario Resolving conflicts 4:
+ 561  git checkout master
+  562  git pull
+  563  git checkout fixing_issues
+  564  git merge master
+  565  git status
+  566  git status
+  567  git add src/LoginTests.java
+  568  git commit -m "removed all the spaces"
+------------------------------------------------
+git log is checking the commit ID 
+
+
+Day#1
+take the latest code from master 
+create a copy -> branch
+
+Day#2
+master changes pushed by someone
+pull master 
+switch to my branch
+merge master
+branch created on Day#1 is not exactly the copy of master 
+
+Conflicts :
+Day#1
+master : 
+
+copy of master branch :modify_xml
+xml verbose:5
+commit into branch 
+push 
+
+Day#2 
+master :
+verbose:10
+
+pull the master 
+merge the master into the modify_xml
+verbose:10 
+
+Generate SSH key commands 
+=====================================
+
+  502  ls -al ~/.ssh
+  503  ssh-keygen -t ed25519 -C "sudheer694@gmail.com"
+  504  ls -al ~/.ssh
+  505  ls -al ~/.ssh
+  506  ssh-keygen -t ed25519 -C "sudheer694@gmail.com"
+  507  ls -al ~/.ssh
+  508  $ clip < ~/.ssh/id_ed25519.pub
+  509  clip < ~/.ssh/id_ed25519.pub
+  510  history
+
+
+
+
+
+
+
+
+
